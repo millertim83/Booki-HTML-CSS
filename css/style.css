@@ -54,6 +54,11 @@ body {
 }
 
 /****** Accommodation And Popular ***********/
+.header-container img {
+    height: 15px;
+}
+
+/****** Accommodation And Popular ***********/
 .accommodation-and-popular {
   display: flex;
   justify-content: space-between;
