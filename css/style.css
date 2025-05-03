@@ -53,6 +53,19 @@ body {
   color: var(--main-bg-color);
 }
 
+/****** Header ***********/
+.accommodation-activites a {
+    text-decoration: none;
+}
+
+.accommodation-activites a:focus {
+    border-bottom: 2px solid #0065fc
+}
+
+.accommodation-activites a:visited {
+    color: inherit;
+}
+
 /****** Accommodation And Popular ***********/
 .accommodation-and-popular {
   display: flex;
