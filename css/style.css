@@ -79,14 +79,21 @@ body {
 #accommodation-activities {
     grid-column-start: 3;
     grid-column-end: 4;
+    justify-self: end;
 }
 
-#accommodation-activities a:focus {
-    border-top: 2px solid #0065fc
+#accommodation-activities a:hover {
+    border-top: 2px solid #0065fc;
+    color: #0065fc;
 }
 
 #header-subtitle {
     margin-top: 30px;
+}
+
+#header-subtitle p, #header-subtitle h2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 
