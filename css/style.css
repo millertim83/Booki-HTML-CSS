@@ -54,17 +54,41 @@ body {
 }
 
 /****** Header ***********/
-.accommodation-activites a {
-    text-decoration: none;
+#header-container {
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: 5em 10em;
 }
 
-.accommodation-activites a:focus {
-    border-bottom: 2px solid #0065fc
+#header-logo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 30px;
 }
 
-.accommodation-activites a:visited {
+#accommodation-activities a:visited {
     color: inherit;
 }
+
+#accommodation-activities a {
+    color:#0065fc;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+#accommodation-activities {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#accommodation-activities a:focus {
+    border-top: 2px solid #0065fc
+}
+
+#header-subtitle {
+    margin-top: 30px;
+}
+
 
 /****** Accommodation And Popular ***********/
 .accommodation-and-popular {
