@@ -97,6 +97,40 @@ body {
     margin-bottom: 10px;
 }
 
+/****** Search Bar ***********/
+
+#search {
+  display: grid;
+  grid-template-columns: 1fr 3.5fr 2.5fr;
+  grid-template-rows: 4em;
+  border: 2px solid #f2f2f2;
+  border-radius: 20px;
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+#location-pin {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#search-form {
+  background-color: white;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#search-button {
+  background-color: #0065fc;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 
 /****** Accommodation And Popular ***********/
 .header-container img {
