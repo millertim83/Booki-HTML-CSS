@@ -118,16 +118,27 @@ body {
   border-bottom-left-radius: 20px;
 }
 
-#search-form {
+#search-entry {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
   background-color: white;
   grid-column-start: 2;
   grid-column-end: 3;
+  border: none;
+  font-family: "Raleway", sans-serif;
 }
 
 #search-button {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
   background-color: #0065fc;
   grid-column-start: 3;
   grid-column-end: 4;
+  border: 2px solid #0065fc;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
