@@ -106,6 +106,7 @@ body {
   border: 2px solid #f2f2f2;
   border-radius: 20px;
   width: 400px;
+  height: 49px;
   margin-bottom: 30px;
 }
 
@@ -116,9 +117,19 @@ body {
   border: 2px solid #f2f2f2;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  text-align: center;
+  height: 49px;
+  line-height: 49px;
+}
+
+.fa-location-dot {
+  color: black;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 #search-entry {
+  height: 49px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -126,11 +137,15 @@ body {
   background-color: white;
   grid-column-start: 2;
   grid-column-end: 3;
-  border: none;
+  border-top: 2px solid #f2f2f2;
+  border-left: none;
+  border-bottom: 2px solid #f2f2f2;
+  border-right: none;
   font-family: "Raleway", sans-serif;
 }
 
 #search-button {
+  height: 49px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
