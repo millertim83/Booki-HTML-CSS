@@ -101,12 +101,8 @@ body {
 
 #search {
   display: grid;
-  grid-template-columns: 1fr 3.5fr 2.5fr;
-  grid-template-rows: 4em;
-  border: 2px solid #f2f2f2;
-  border-radius: 20px;
-  width: 400px;
-  height: 49px;
+  grid-template-columns: 50px 195px 93px;
+  grid-template-rows: 49px;
   margin-bottom: 30px;
 }
 
@@ -114,12 +110,13 @@ body {
   grid-column-start: 1;
   grid-column-end: 2;
   background-color: #f2f2f2;
-  border: 2px solid #f2f2f2;
+  border: 1px solid #f2f2f2;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   text-align: center;
-  height: 49px;
-  line-height: 49px;
+  height: 47px;
+  line-height: 47px;
+  width: 50px;
 }
 
 .fa-location-dot {
@@ -129,7 +126,7 @@ body {
 }
 
 #search-entry {
-  height: 49px;
+  height: 47px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -137,11 +134,12 @@ body {
   background-color: white;
   grid-column-start: 2;
   grid-column-end: 3;
-  border-top: 2px solid #f2f2f2;
+  border-top: 1px solid #f2f2f2;
   border-left: none;
-  border-bottom: 2px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
   border-right: none;
   font-family: "Raleway", sans-serif;
+  padding: 0;
 }
 
 #search-button {
@@ -153,7 +151,7 @@ body {
   background-color: #0065fc;
   grid-column-start: 3;
   grid-column-end: 4;
-  border: 2px solid #0065fc;
+  border: 1px solid #0065fc;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
