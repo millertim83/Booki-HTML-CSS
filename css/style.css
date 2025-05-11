@@ -158,6 +158,11 @@ body {
 
 /****** Filter ***********/
 
+#filters {
+  display: inline-flex;
+  margin-bottom: 30px;
+}
+
 .filter-button {
   display: inline-flex;
   gap: 10px;
@@ -167,9 +172,10 @@ body {
   border-radius: 25px;
   background-color: white;
   padding: 4px 19px;
+  margin-left: 20px;
 }
 
-.filter-button:focus {
+.filter-button:hover {
   background-color: #deebff;
 }
 
