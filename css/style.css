@@ -208,6 +208,47 @@ body {
   width: 65%;
 }
 
+.
+
+.accommodation-title {
+  margin-bottom: ;
+}
+
+.accommodation-cards .card {
+  padding: 0;
+  width: 243px;
+  height: 207.25px;
+  margin-top: 33px;
+}
+
+.accommodation-cards .card-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  
+}
+
+.accommodation-cards .card-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.accommodation-cards .card-subtitle {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.accommodation-cards img {
+  width: 233px;
+  height: 114px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 5px;
+
+}
+
+
+
 /****** Popular ***********/
 .popular {
   width: 32%;
