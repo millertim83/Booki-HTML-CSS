@@ -207,11 +207,17 @@ body {
 .accommodation {
   width: 65%;
 }
-
-
-
 .accommodation-title {
-  margin-bottom: ;
+  margin-bottom: 0;
+}
+
+.accommodation-cards {
+  display: grid;
+  grid-template-rows: 210px 210px;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .accommodation-cards .card {
@@ -219,6 +225,8 @@ body {
   width: 243px;
   height: 207.25px;
   margin-top: 33px;
+  justify-self: center;
+  align-self: center;
 }
 
 .accommodation-cards .card-content {
