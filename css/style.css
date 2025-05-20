@@ -208,14 +208,15 @@ body {
   width: 65%;
 }
 .accommodation-title {
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 .accommodation-cards {
   display: grid;
   grid-template-rows: 210px 210px;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 20px;
+  row-gap: 30px;
+  column-gap: 30px;
   justify-content: space-between;
   align-content: space-between;
 }
@@ -224,7 +225,6 @@ body {
   padding: 0;
   width: 243px;
   height: 207.25px;
-  margin-top: 33px;
   justify-self: center;
   align-self: center;
 }
@@ -255,7 +255,11 @@ body {
 
 }
 
-
+#show-more {
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+}
 
 /****** Popular ***********/
 .popular {
