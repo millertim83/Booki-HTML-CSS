@@ -17,6 +17,7 @@
 body {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .main-container {
@@ -304,4 +305,26 @@ body {
 
 .popular-cards .card-rating {
   margin-bottom: 5px;
+}
+
+
+/****** Things to Do ***********/
+
+.things-to-do {
+  margin-top: 40px;
+  display: grid;
+}
+
+.to-do-card {
+  height: 439px;
+  width: 298px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.to-do-card img {
+  height: 380px;
+  width: 297.5px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
