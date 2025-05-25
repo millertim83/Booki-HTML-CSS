@@ -253,7 +253,6 @@ body {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   padding: 5px;
-
 }
 
 #show-more {
@@ -313,6 +312,15 @@ body {
 .things-to-do {
   margin-top: 40px;
   display: grid;
+  grid-template-rows: auto 1 fr;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  padding: 80px;
+}
+
+.things-to-do-title {
+  grid-column: span 4;
+  margin-bottom: 30px;
 }
 
 .to-do-card {
@@ -327,4 +335,9 @@ body {
   width: 297.5px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  object-fit: cover;
+}
+
+.to-do-card h3 {
+  margin-left: 20px;
 }
