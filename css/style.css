@@ -341,3 +341,10 @@ body {
 .to-do-card h3 {
   margin-left: 20px;
 }
+
+
+/****** Footer ***********/
+.footer-container {
+background-color: var(--main-bg-color);
+display: flex;
+}
