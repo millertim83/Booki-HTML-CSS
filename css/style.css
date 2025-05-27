@@ -315,7 +315,7 @@ body {
   grid-template-rows: auto 1 fr;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
-  padding: 80px;ope
+  padding: 80px;
 }
 
 .things-to-do-title {
