@@ -347,4 +347,23 @@ body {
 .footer-container {
 background-color: var(--main-bg-color);
 display: flex;
+align-items: flex-start;
+margin-left: 50px;
+margin-right: 50px;
+
+}
+
+.footer-container section {
+  width: 33%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-list a {
+  text-decoration: none;
 }
