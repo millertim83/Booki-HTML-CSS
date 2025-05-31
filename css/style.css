@@ -54,11 +54,15 @@ body {
   color: var(--main-bg-color);
 }
 
+a:visited {
+  color: black;
+}
+
 /****** Header ***********/
 #header-container {
     display: grid;
     grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: 5em 10em;
+    grid-template-rows: 5em 8em;
 }
 
 #header-logo {
@@ -66,6 +70,10 @@ body {
     grid-column-start: 1;
     grid-column-end: 3;
     margin-top: 30px;
+}
+
+.header-container img {
+  height: 15px;
 }
 
 #accommodation-activities a:visited {
@@ -95,7 +103,8 @@ body {
 
 #header-subtitle p, #header-subtitle h2 {
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    line-height: 1.6;
 }
 
 /****** Search Bar ***********/
@@ -162,6 +171,7 @@ body {
 #filters {
   display: inline-flex;
   margin-bottom: 30px;
+  align-items: center;
 }
 
 .filter-button {
@@ -186,9 +196,23 @@ body {
   font-weight: 700;
 }
 
-/****** Accommodation And Popular ***********/
-.header-container img {
-    height: 15px;
+/****** Info *******/
+
+#info-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#info-icon-container {
+  display: flex;
+  height: 24px;
+  width: 24px;
+  border: 1px solid #d9d9d9;
+  border-radius: 24px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
 }
 
 /****** Accommodation And Popular ***********/
@@ -310,7 +334,6 @@ body {
 /****** Things to Do ***********/
 
 .things-to-do {
-  margin-top: 40px;
   display: grid;
   grid-template-rows: auto 1 fr;
   grid-template-columns: repeat(4, 1fr);
@@ -374,8 +397,4 @@ margin-right: 50px;
 
 .footer-list a {
   text-decoration: none;
-}
-
-.footer-list a:visited {
-  color: black;
 }
