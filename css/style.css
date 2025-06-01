@@ -28,8 +28,6 @@ body {
   margin: auto;
 }
 
-
-
 .section-title {
   margin: 0;
   font-size: 22px;
@@ -340,9 +338,9 @@ a:visited {
 .things-to-do {
   display: grid;
   grid-template-rows: auto 1 fr;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: space-between;
-  padding: 80px;
+  grid-template-columns: repeat(4, 298px);
+  justify-content: space-between; 
+  padding: 30px;
 }
 
 .things-to-do-title {
@@ -359,7 +357,7 @@ a:visited {
 
 .to-do-card img {
   height: 380px;
-  width: 297.5px;
+  width: 298px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
