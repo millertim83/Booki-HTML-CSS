@@ -223,6 +223,12 @@ a:visited {
   justify-content: space-between;
 }
 
+@media (max-width: 1440px) {
+  .accommodation-and-popular {
+    flex-wrap: wrap;
+  }
+}
+
 .accommodation-and-popular section {
   background-color: var(--main-bg-color);
   border-radius: 20px;
@@ -234,6 +240,13 @@ a:visited {
 .accommodation {
   width: 65%;
 }
+
+@media (max-width: 1440px) {
+  .accommodation {
+    width: 90%;
+  }
+}
+
 .accommodation-title {
   margin-bottom: 30px;
 }
@@ -290,6 +303,12 @@ a:visited {
 /****** Popular ***********/
 .popular {
   width: 32%;
+}
+
+@media (max-width: 1440px) {
+  .popular {
+    width: 90%;
+  }
 }
 
 .popular-title {
@@ -361,6 +380,23 @@ a:visited {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
+}
+
+@media (max-width: 1440px) {
+  .to-do-card {
+    height: 270px;
+    width: 194px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .to-do-card img {
+    height: 200px;
+    width: 194px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+  }
 }
 
 .to-do-card h3 {
