@@ -22,9 +22,13 @@ body {
 
 .main-container {
   width: 100%;
+  max-width: 1440px;
   padding: 0 50px;
   box-sizing: border-box;
+  margin: auto;
 }
+
+
 
 .section-title {
   margin: 0;
