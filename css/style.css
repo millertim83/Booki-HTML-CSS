@@ -214,12 +214,33 @@ a:visited {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+
+#search-button .search-icon {
+  display: none;
+}
+
 @media (max-width: 768px) {
   #search {
     padding: 0 20px;
     margin-top: 30px;
   }
+
+  #search-button {
+    width: 49px;
+    border-radius: 20px;
+  }
+
+  #search-button .search-icon {
+    display: inline;
+    color: #FFFFFF;
+  }
+
+  #search-button #search-text {
+    display: none;
+  }
+
 }
+
 
 /****** Filter ***********/
 
