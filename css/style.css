@@ -144,6 +144,7 @@ a:visited {
 }
   #accommodation-activities a {
     margin-left: 0;
+    border-bottom: 2px solid #F2F2F2;
   }
 
   #accommodation-activities a:hover {
