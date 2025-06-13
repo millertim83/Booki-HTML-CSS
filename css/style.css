@@ -124,6 +124,7 @@ a:visited {
   #header-container {
     width: 100%;
     grid-template-rows: auto auto auto;
+    text-align: center;
   }
 
   #header-logo {
@@ -133,15 +134,16 @@ a:visited {
   }
 
   #accommodation-activities {
+    display: grid;
+    grid-template-columns: 50% 50%;
     grid-column-start: 1;
     grid-column-end: 2;
     justify-self: center;
     width: 100%;
     margin-top: 25px;
 }
-#accommodation-activities a {
+  #accommodation-activities a {
     margin-left: 0;
-    width: 50%;
   }
 
   #accommodation-activities a:hover {
@@ -223,6 +225,7 @@ a:visited {
   #search {
     padding: 0 20px;
     margin-top: 30px;
+    justify-self: center;
   }
 
   #search-button {
@@ -533,7 +536,45 @@ a:visited {
   object-fit: cover;
 }
 
-@media (max-width: 1440px) {
+ /* Alternate code to try flexible card sizing */
+
+/*
+
+.things-to-do {
+  display: grid;
+  grid-template-rows: auto 1 fr;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between; 
+  padding: 30px;
+}
+
+.things-to-do-title {
+  grid-column: span 4;
+  margin-bottom: 30px;
+}
+
+.to-do-card {
+  width: 20%;
+  aspect-ratio: 298 / 439;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.to-do-card h3 {
+  margin-left: 20px;
+}
+
+.to-do-card img {
+  width: 100%;
+  aspect-ratio: 298 / 380;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+
+*/
+
+@media (max-width: 1024px) {
   .things-to-do {
     grid-template-columns: repeat(4, 194px);
   }
@@ -553,9 +594,6 @@ a:visited {
     object-fit: cover;
   }
 }
-
-
-
 
 /****** Footer ***********/
 .footer-container {
