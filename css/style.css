@@ -145,6 +145,7 @@ a:visited {
   #accommodation-activities a {
     margin-left: 0;
     border-bottom: 2px solid #F2F2F2;
+    padding-bottom: 15px;
   }
 
   #accommodation-activities a:hover {
@@ -309,11 +310,12 @@ a:visited {
   }
 
   #filter-buttons-container {
+    width: 100%;
     display: grid;
     grid-template-rows: 50px 50px;
     grid-template-columns: 162.5px 162.5px;
-    column-gap: 20px;
     row-gap: 20px;
+
   }
 
   #budget {
@@ -360,7 +362,6 @@ a:visited {
 }
 
 .accommodation-and-popular section {
-  background-color: var(--main-bg-color);
   border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;
@@ -377,10 +378,16 @@ a:visited {
     flex-wrap: wrap;
     flex-direction: column-reverse;
   }
+
+  .accommodation-and-popular section {
+    border-radius: 0;
+  }
+
 }
 
 /****** Accommodation ***********/
 .accommodation {
+  background-color: var(--main-bg-color);
   width: 65%;
 }
 
@@ -440,9 +447,16 @@ a:visited {
   }
 }
 
+@media (max-width: 768px) {
+  .accommodation {
+    background-color: white;
+  }
+}
+
 /****** Popular ***********/
 .popular {
   width: 32%;
+  background-color: var(--main-bg-color);
 }
 
 .popular-title {
