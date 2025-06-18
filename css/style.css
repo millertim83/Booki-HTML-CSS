@@ -451,6 +451,18 @@ a:visited {
   .accommodation {
     background-color: white;
   }
+  
+  .accommodation-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accommodation-cards .card {
+    width: 100%;
+    aspect-ratio: ;
+  }
+
 }
 
 /****** Popular ***********/
@@ -516,98 +528,132 @@ a:visited {
   }
 }
 
+@media (max-width: 768px) {
+  .popular-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popular-cards .card {
+    width: 100%;
+  }
+}
+
 
 /****** Things to Do ***********/
 
-.things-to-do {
-  display: grid;
-  grid-template-rows: auto 1 fr;
-  grid-template-columns: repeat(4, 298px);
-  justify-content: space-between; 
-  padding: 30px;
-}
+/* For larger desktops */
 
-.things-to-do-title {
-  grid-column: span 4;
-  margin-bottom: 30px;
-}
-
-.to-do-card {
-  height: 439px;
-  width: 298px;
-  border-radius: 20px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-}
-
-.to-do-card h3 {
-  margin-left: 20px;
-}
-
-.to-do-card img {
-  height: 380px;
-  width: 298px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  object-fit: cover;
-}
-
- /* Alternate code to try flexible card sizing */
-
-/*
-
-.things-to-do {
-  display: grid;
-  grid-template-rows: auto 1 fr;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: space-between; 
-  padding: 30px;
-}
-
-.things-to-do-title {
-  grid-column: span 4;
-  margin-bottom: 30px;
-}
-
-.to-do-card {
-  width: 20%;
-  aspect-ratio: 298 / 439;
-  border-radius: 20px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-}
-
-.to-do-card h3 {
-  margin-left: 20px;
-}
-
-.to-do-card img {
-  width: 100%;
-  aspect-ratio: 298 / 380;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  object-fit: cover;
-}
-
-*/
-
-@media (max-width: 1024px) {
+@media (min-width: 1441px) {
   .things-to-do {
-    grid-template-columns: repeat(4, 194px);
+    display: grid;
+    grid-template-rows: auto 1 fr;
+    grid-template-columns: repeat(4, 298px);
+    justify-content: space-between; 
+    padding: 30px;
+  }
+
+  .things-to-do-title {
+    grid-column: span 4;
+    margin-bottom: 30px;
   }
 
   .to-do-card {
-    height: 270px;
-    width: 194px;
+    height: 439px;
+    width: 298px;
     border-radius: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
   }
 
+  .to-do-card h3 {
+    margin-left: 20px;
+  }
+
   .to-do-card img {
-    height: 200px;
-    width: 194px;
+    height: 380px;
+    width: 298px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
   }
+}
+
+/* For smaller desktops */
+/*
+@media (max-width: 1440px) {
+  .things-to-do {
+    display: grid;
+    gap: 30px;
+    grid-template-rows: auto 1 fr;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between; 
+    padding: 30px;
+  }
+
+  .things-to-do-title {
+    grid-column: span 4;
+  }
+
+    .to-do-card {
+    width: 100%;
+    aspect-ratio: 298 / 439;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .to-do-card h3 {
+    margin-left: 20px;
+  }
+
+  .to-do-card img {
+    width: 100%;
+    aspect-ratio: 298 / 380;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .to-do-card {
+    aspect-ratio: 194 / 270;
+  }
+
+  .to-do-card img {
+    aspect-ratio: 194 / 200;
+  }
+}
+
+*/
+
+@media (max-width: 768px) {
+  .things-to-do {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    padding: 30px;
+    gap: 15px;
+}
+
+.to-do-card {
+  width: 100%;
+  aspect-ratio: 315 / 200;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+.to-do-card img {
+  width: 100%;
+  aspect-ratio: 315 / 141;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+
+.to-do-card h3 {
+  margin-left: 20px;
+}
+
 }
 
 /****** Footer ***********/
