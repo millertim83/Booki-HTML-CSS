@@ -579,15 +579,15 @@ a:visited {
 }
 
 /* For smaller desktops */
-/*
+
 @media (max-width: 1440px) {
   .things-to-do {
     display: grid;
     gap: 30px;
-    grid-template-rows: auto 1 fr;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: space-between; 
+    grid-template-rows: auto 1fr;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     padding: 30px;
+    box-sizing: border-box;
   }
 
   .things-to-do-title {
@@ -625,7 +625,7 @@ a:visited {
   }
 }
 
-*/
+
 
 @media (max-width: 768px) {
   .things-to-do {
@@ -686,4 +686,11 @@ width: 100%;
 
 .footer-list a {
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
