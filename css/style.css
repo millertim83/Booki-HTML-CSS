@@ -72,16 +72,16 @@ a:visited {
 
 /****** Header ***********/
 #header-container {
-    display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: 5em 8em;
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-rows: 5em 8em;
 }
 
 #header-logo {
-    height: 25px;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    margin-top: 30px;
+  height: 25px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 30px;
 }
 
 .header-container img {
@@ -89,36 +89,36 @@ a:visited {
 }
 
 #accommodation-activities a:visited {
-    color: inherit;
+  color: inherit;
 }
 
 #accommodation-activities a {
-    color:#0065fc;
-    text-decoration: none;
-    margin-left: 30px;
+  color: #0065fc;
+  text-decoration: none;
+  margin-left: 30px;
 }
 
 #accommodation-activities {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    justify-self: end;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  justify-self: end;
 }
 
 #accommodation-activities a:hover {
-    border-top: 2px solid #0065fc;
-    color: #0065fc;
+  border-top: 2px solid #0065fc;
+  color: #0065fc;
 }
 
 #header-subtitle {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
-#header-subtitle p, #header-subtitle h2 {
-    margin-top: 0px;
-    margin-bottom: 0;
-    line-height: 1.6;
+#header-subtitle p,
+#header-subtitle h2 {
+  margin-top: 0px;
+  margin-bottom: 0;
+  line-height: 1.6;
 }
-
 
 @media (max-width: 768px) {
   #header-container {
@@ -141,10 +141,10 @@ a:visited {
     justify-self: center;
     width: 100%;
     margin-top: 25px;
-}
+  }
   #accommodation-activities a {
     margin-left: 0;
-    border-bottom: 2px solid #F2F2F2;
+    border-bottom: 2px solid #f2f2f2;
     padding-bottom: 15px;
   }
 
@@ -152,13 +152,12 @@ a:visited {
     border-bottom: 2px solid #0065fc;
     border-top: none;
     color: #0065fc;
-}
+  }
   #header-subtitle {
     text-align: left;
     padding: 0 20px;
   }
 }
-
 
 /****** Search Bar ***********/
 
@@ -237,15 +236,13 @@ a:visited {
 
   #search-button .search-icon {
     display: inline;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   #search-button #search-text {
     display: none;
   }
-
 }
-
 
 /****** Filter ***********/
 
@@ -281,7 +278,7 @@ a:visited {
 @media (max-width: 1024px) {
   #filters {
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
   }
 
   #filter-title-container {
@@ -290,7 +287,8 @@ a:visited {
 
   .filter-button {
     margin-left: 0;
-    margin-right: 38px;
+    margin-right: 9px;
+    padding: 4px 15px;
   }
 }
 
@@ -311,11 +309,12 @@ a:visited {
 
   #filter-buttons-container {
     width: 100%;
+    /*
     display: grid;
     grid-template-rows: 50px 50px;
-    grid-template-columns: 162.5px 162.5px;
+    grid-template-columns: auto auto;
     row-gap: 20px;
-
+    */
   }
 
   #budget {
@@ -327,7 +326,6 @@ a:visited {
     grid-column-start: 2;
     grid-column-end: 3;
   }
-  
 }
 
 /****** Info *******/
@@ -373,7 +371,7 @@ a:visited {
   }
 }
 
-@media  (max-width: 768px) {
+@media (max-width: 768px) {
   .accommodation-and-popular {
     flex-wrap: wrap;
     flex-direction: column-reverse;
@@ -382,7 +380,6 @@ a:visited {
   .accommodation-and-popular section {
     border-radius: 0;
   }
-
 }
 
 /****** Accommodation ***********/
@@ -415,7 +412,6 @@ a:visited {
   display: flex;
   flex-direction: column;
   padding-left: 15px;
-  
 }
 
 .accommodation-cards .card-title {
@@ -451,7 +447,7 @@ a:visited {
   .accommodation {
     background-color: white;
   }
-  
+
   .accommodation-cards {
     width: 100%;
     display: flex;
@@ -462,7 +458,6 @@ a:visited {
     width: 100%;
     aspect-ratio: ;
   }
-
 }
 
 /****** Popular ***********/
@@ -484,7 +479,8 @@ a:visited {
 
 .popular-cards img {
   width: 33%;
-  height: 136px;
+  /*height: 136px; */
+  aspect-ratio: 335 / 408;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -515,6 +511,7 @@ a:visited {
   .popular {
     width: 100%;
     margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .popular-cards {
@@ -524,21 +521,34 @@ a:visited {
 
   .popular-cards .card {
     width: 30%;
+    aspect-ratio: 274.67 / 146;
     justify-content: flex-end;
   }
+
+  .popular-cards img {
+    width: 33%;
+    aspect-ratio: 91.56 / 136;
+  }
+
 }
 
 @media (max-width: 768px) {
   .popular-cards {
     display: flex;
     flex-direction: column;
+
   }
 
   .popular-cards .card {
     width: 100%;
+    aspect-ratio: 335 / 146;
+  }
+
+  .popular-cards img {
+    width: 33%;
+    aspect-ratio: 335 /438;
   }
 }
-
 
 /****** Things to Do ***********/
 
@@ -549,7 +559,7 @@ a:visited {
     display: grid;
     grid-template-rows: auto 1 fr;
     grid-template-columns: repeat(4, 298px);
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 30px;
   }
 
@@ -594,7 +604,7 @@ a:visited {
     grid-column: span 4;
   }
 
-    .to-do-card {
+  .to-do-card {
     width: 100%;
     aspect-ratio: 298 / 439;
     border-radius: 20px;
@@ -603,6 +613,8 @@ a:visited {
 
   .to-do-card h3 {
     margin-left: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
   }
 
   .to-do-card img {
@@ -612,8 +624,10 @@ a:visited {
     border-top-right-radius: 20px;
     object-fit: cover;
   }
-
 }
+
+
+
 
 @media (max-width: 1024px) {
   .to-do-card {
@@ -621,11 +635,16 @@ a:visited {
   }
 
   .to-do-card img {
-    aspect-ratio: 194 / 200;
+    aspect-ratio: 194 / 194;
+  }
+
+  .to-do-card h3 {
+    margin-left: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    ;
   }
 }
-
-
 
 @media (max-width: 768px) {
   .things-to-do {
@@ -634,34 +653,34 @@ a:visited {
     grid-auto-rows: auto;
     padding: 30px;
     gap: 15px;
-}
+  }
 
-.to-do-card {
-  width: 100%;
-  aspect-ratio: 315 / 200;
-  border-radius: 20px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-}
-.to-do-card img {
-  width: 100%;
-  aspect-ratio: 315 / 141;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  object-fit: cover;
-}
+  .to-do-card {
+    width: 100%;
+    aspect-ratio: 315 / 200;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  }
+  .to-do-card img {
+    width: 100%;
+    aspect-ratio: 315 / 141;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+  }
 
-.to-do-card h3 {
-  margin-left: 20px;
-}
-
+  .to-do-card h3 {
+    margin-left: 20px;
+  }
 }
 
 /****** Footer ***********/
 .footer-container {
-background-color: var(--main-bg-color);
-display: flex;
-align-items: flex-start;
-width: 100%;
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 30px;
 }
 
 .footer-container h3 {
@@ -671,7 +690,7 @@ width: 100%;
 .footer-container section {
   width: 33%;
   text-align: left;
-  padding-left: 20px;
+  /*padding-left: 20px;*/
 }
 
 .footer-list {
@@ -692,5 +711,10 @@ width: 100%;
   .footer-container {
     flex-direction: column;
     flex-wrap: wrap;
+    /*padding-left: 10px;*
+  }
+
+  .footer-container section {
+    width: 100%;
   }
 }
