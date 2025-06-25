@@ -73,8 +73,9 @@ a:visited {
 /****** Header ***********/
 #header-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 5em 8em;
+  grid-template-columns: 1fr 1fr auto;
+  grid-template-rows: 5em auto;
+  margin-bottom: 30px;
 }
 
 #header-logo {
@@ -93,7 +94,7 @@ a:visited {
 }
 
 #accommodation-activities a {
-  color: #0065fc;
+  color: var(--main-color);
   text-decoration: none;
   margin-left: 30px;
 }
@@ -105,12 +106,13 @@ a:visited {
 }
 
 #accommodation-activities a:hover {
-  border-top: 2px solid #0065fc;
+  border-top: 2px solid var(--main-color);
   color: #0065fc;
 }
 
 #header-subtitle {
   margin-top: 30px;
+  grid-column: 1 / -1;
 }
 
 #header-subtitle p,
@@ -135,7 +137,7 @@ a:visited {
 
   #header-logo {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     justify-self: center;
   }
 
@@ -143,21 +145,21 @@ a:visited {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     justify-self: center;
     width: 100%;
     margin-top: 25px;
   }
   #accommodation-activities a {
     margin-left: 0;
-    border-bottom: 2px solid #f2f2f2;
+    border-bottom: 2px solid var(--main-bg-color);
     padding-bottom: 15px;
   }
 
   #accommodation-activities a:hover {
-    border-bottom: 2px solid #0065fc;
+    border-bottom: 2px solid var(--main-color);
     border-top: none;
-    color: #0065fc;
+    color: var(--main-color)
   }
   #header-subtitle {
     text-align: left;
@@ -177,8 +179,8 @@ a:visited {
 #location-pin {
   grid-column-start: 1;
   grid-column-end: 2;
-  background-color: #f2f2f2;
-  border: 1px solid #f2f2f2;
+  background-color: var(--main-bg-color);
+  border: 1px solid var(--main-bg-color);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   text-align: center;
@@ -202,9 +204,9 @@ a:visited {
   background-color: white;
   grid-column-start: 2;
   grid-column-end: 3;
-  border-top: 1px solid #f2f2f2;
+  border-top: 1px solid var(--main-bg-color);
   border-left: none;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid var(--main-bg-color);
   border-right: none;
   font-family: "Raleway", sans-serif;
   padding: 0;
@@ -216,10 +218,10 @@ a:visited {
   font-size: 18px;
   font-weight: 700;
   color: white;
-  background-color: #0065fc;
+  background-color: var(--main-color);
   grid-column-start: 3;
   grid-column-end: 4;
-  border: 1px solid #0065fc;
+  border: 1px solid var(--main-color);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
