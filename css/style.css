@@ -389,7 +389,7 @@ a:visited {
 }
 
 /****** Accommodation ***********/
-.accommodation {
+#accommodation {
   background-color: var(--main-bg-color);
   width: 65%;
 }
@@ -444,13 +444,13 @@ a:visited {
 }
 
 @media (max-width: 1024px) {
-  .accommodation {
+  #accommodation {
     width: 100%;
   }
 }
 
 @media (max-width: 768px) {
-  .accommodation {
+  #accommodation {
     background-color: white;
   }
 
@@ -564,7 +564,7 @@ a:visited {
 
 /****** Things to Do ***********/
 
-.things-to-do {
+#things-to-do {
   display: grid;
   grid-template-rows: auto 1fr;
   grid-template-columns: repeat(4, 298px);
@@ -597,7 +597,7 @@ a:visited {
 }
 
 @media (max-width: 1440px) {
-  .things-to-do {
+  #things-to-do {
     grid-template-rows: auto 1fr;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 30px;
@@ -627,7 +627,7 @@ a:visited {
 }
 
 @media (max-width: 768px) {
-  .things-to-do {
+  #things-to-do {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
