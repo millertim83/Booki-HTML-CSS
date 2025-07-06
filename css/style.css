@@ -44,6 +44,12 @@ body {
   object-fit: cover;
 }
 
+.card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .card-title {
   font-size: 16px;
 }
@@ -582,6 +588,10 @@ a:visited {
   aspect-ratio: 298 / 439;
   border-radius: 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.to-do-card a {
+  text-decoration: none;
 }
 
 .to-do-card h3 {
